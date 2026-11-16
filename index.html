@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142d3b">
+  <meta name="description" content="A visual exploration of hospitalised road-crash injuries in Australia from 2011 to 2021.">
+  <title>Hospitalised Injuries from Road Crashes in Australia (2011–2021)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script defer src="js/q1.js"></script>
+  <script defer src="js/q2.js"></script>
+  <script defer src="js/q3.js"></script>
+  <script defer src="js/q4.js"></script>
+  <script defer src="js/q5.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to story</a>
+  <nav class="site-nav" aria-label="Story navigation">
+    <a class="nav-brand" href="#top" aria-label="Road safety data story home">
+      <span class="brand-mark" aria-hidden="true">R</span>
+      <span>Road safety <span class="brand-muted">/ Data story</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#q1">National trend</a>
+      <a href="#q2">Road users</a>
+      <a href="#q3">Age groups</a>
+      <a href="#q4">States</a>
+      <a href="#q5">First Nations</a>
+    </div>
+  </nav>
+  <header class="site-header">
+    <div class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> COS30045 | Data visualisation</p>
+        <h1>Hospitalised Injuries<br>from Road Crashes<br><span>in Australia <span class="hero-years">(2011–2021)</span></span></h1>
+        <p class="hero-period">A decade in focus</p>
+        <p class="hero-intro">What can a decade of hospitalisation data tell us about the people and places most affected by road crashes?</p>
+        <a class="hero-link" href="#q1">Explore the story <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-aside">
+        <div class="hero-stat">
+          <span class="stat-value">11</span>
+          <span class="stat-label">years of data</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-value">5</span>
+          <span class="stat-label">questions explored</span>
+        </div>
+        <div class="hero-summary">
+          <span class="summary-label">The dataset</span>
+          <p>Hospitalised road-crash injury records published by the Bureau of Infrastructure and Transport Research Economics (BITRE), covering 2011–2021.</p>
+        </div>
+        <p class="hero-source">Australian road trauma | Hospitalisations</p>
+      </div>
+    </div>
+    <div class="hero-bottom" aria-hidden="true">
+      <span>01 — 05</span><span class="hero-bottom-line"></span><span>Scroll to explore</span>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="story-intro" aria-label="About this story">
+      <p class="section-kicker">The questions</p>
+      <p class="story-intro-copy">From the national picture to individual communities, explore how hospitalised injuries from road crashes changed across Australia.</p>
+      <span class="story-intro-note">Use each chart’s controls to explore the data.</span>
+    </section>
+
+    <section class="story-card" id="q1" aria-labelledby="q1-title">
+      <div class="card-heading">
+        <div class="card-number">01</div>
+        <div>
+          <p class="section-kicker">National data</p>
+          <h2 id="q1-title">National Hospitalisation Trends (2011–2021)</h2>
+        </div>
+      </div>
+      <div class="question-block">
+        <h3>Research question</h3>
+        <p>How did the annual number of hospitalised injuries from road crashes in Australia change between 2011 and 2021, and what notable patterns emerged during this period?</p>
+      </div>
+      <div class="finding-box">
+        <span class="finding-label">Key findings</span>
+        <p>Annual hospitalisations rose from 34,033 in 2011 to a peak of 39,866 in 2019 (+17.1%). They fell to 37,966 in 2020 (-4.8%) before recovering to 39,505 in 2021 (+4.1% year on year; 16.1% above 2011).</p>
+      </div>
+      <div class="chart-heading">
+        <div><p class="chart-overline">Australia | 2011–2021</p><h3>Annual hospitalisations</h3></div>
+        <span class="chart-unit">People</span>
+      </div>
+      <div class="chart-frame">
+        <div class="chart-container" id="chart-q1" role="img" aria-label="Line chart of annual road-crash injury hospitalisations in Australia from 2011 to 2021"></div>
+      </div>
+      <p class="chart-source">Source: BITRE hospitalised injury data. Counts represent hospitalisations.</p>
+    </section>
+
+    <section class="story-card" id="q2" aria-labelledby="q2-title">
+      <div class="card-heading">
+        <div class="card-number">02</div>
+        <div>
+          <p class="section-kicker">Road user groups</p>
+          <h2 id="q2-title">Road User Categories and Contributions to Change</h2>
+        </div>
+      </div>
+      <div class="question-block">
+        <h3>Research question</h3>
+        <p>How did hospitalised injury counts and their proportions differ across road user types, and which groups contributed most to the changes between selected years?</p>
+      </div>
+      <div class="finding-box">
+        <span class="finding-label">Key findings</span>
+        <p>In 2021, car drivers accounted for the largest share (13,327 hospitalisations; 33.7%), followed by motorcyclists (8,883; 22.5%). From 2011 to 2021, pedal cyclists had the largest count increase (+2,772; +51.4%; share 15.8% to 20.7%), while pedestrian hospitalisations fell by 420 (-15.3%; share 8.1% to 5.9%).</p>
+      </div>
+      <div class="chart-heading">
+        <div><p class="chart-overline">Australia | 2011–2021</p><h3 id="q2-chart-title">Hospitalisations by road-user group</h3></div>
+        <span class="chart-unit" id="q2-unit">People</span>
+      </div>
+      <div class="chart-controls" id="q2-controls" aria-label="Road-user chart controls">
+        <span class="control-label" id="q2-mode-label">View as</span>
+        <div class="segmented-control" role="group" aria-labelledby="q2-mode-label">
+          <button type="button" class="is-selected" data-mode="count" aria-pressed="true">Hospitalisations</button>
+          <button type="button" data-mode="share" aria-pressed="false">Share of total</button>
+          <button type="button" data-mode="change" aria-pressed="false">Net Change (2011 vs 2021)</button>
+        </div>
+      </div>
+      <div class="chart-frame">
+        <div class="chart-container" id="chart-q2" role="img" aria-label="Multi-series line chart of hospitalisations by road-user group from 2011 to 2021"></div>
+      </div>
+      <p class="chart-source">Source: BITRE hospitalised injury data. Net change is calculated as the 2021 count minus the 2011 count.</p>
+    </section>
+
+    <section class="story-card" id="q3" aria-labelledby="q3-title">
+      <div class="card-heading">
+        <div class="card-number">03</div>
+        <div>
+          <p class="section-kicker">Age groups</p>
+          <h2 id="q3-title">Age-Group Distributions Over Time</h2>
+        </div>
+      </div>
+      <div class="question-block">
+        <h3>Research question</h3>
+        <p>How did the distribution of hospitalised road crash injuries vary across age groups in Australia, and how did these distributions change between 2011 and 2021?</p>
+      </div>
+      <div class="finding-box">
+        <span class="finding-label">Key findings</span>
+        <p>People aged 40–64 were the largest group in both 2011 (10,660 hospitalisations; 31.3%) and 2021 (13,026; 33.0%). For ages 17–25, counts edged down from 8,094 to 8,010, and their share fell from 23.8% to 20.3% (-3.5 percentage points).</p>
+      </div>
+      <div class="chart-heading">
+        <div><p class="chart-overline">Australia | Select a year</p><h3>Hospitalisations by age group</h3></div>
+        <span class="chart-unit" id="q3-unit">People</span>
+      </div>
+      <div class="chart-controls" id="q3-controls" aria-label="Age-group chart controls">
+        <label class="control-label" for="q3-year">Year <output id="q3-year-output" for="q3-year">2021</output></label>
+        <input id="q3-year" type="range" min="2011" max="2021" step="1" value="2021">
+      </div>
+      <div class="chart-frame">
+        <div class="chart-container" id="chart-q3" role="img" aria-label="Horizontal bar chart of road-crash injury hospitalisations by age group"></div>
+      </div>
+      <p class="chart-source">Source: BITRE hospitalised injury data. The “Missing” group indicates records without a reported age group.</p>
+    </section>
+
+    <section class="story-card" id="q4" aria-labelledby="q4-title">
+      <div class="card-heading">
+        <div class="card-number">04</div>
+        <div>
+          <p class="section-kicker">States and territories</p>
+          <h2 id="q4-title">State and Territory Comparisons</h2>
+        </div>
+      </div>
+      <div class="question-block">
+        <h3>Research question</h3>
+        <p>How did hospitalised road crash injury counts change across Australian states and territories from 2011 to 2021, and which states showed the largest changes between 2018 and 2021?</p>
+      </div>
+      <div class="finding-box">
+        <span class="finding-label">Key findings</span>
+        <p>From 2018 to 2021, Queensland had the largest increase: 9,381 to 10,447 hospitalisations (+1,066; +11.4%). New South Wales had the largest count decrease, from 9,794 to 9,003 (-791; -8.1%); the Northern Territory had the steepest percentage decline (-14.7%; 832 to 710).</p>
+      </div>
+      <div class="chart-heading">
+        <div><p class="chart-overline">States and territories | Select a year</p><h3>Hospitalisations by jurisdiction</h3></div>
+        <span class="chart-unit">People</span>
+      </div>
+      <div class="chart-controls" id="q4-controls" aria-label="State chart controls">
+        <label class="control-label" for="q4-year">Year <output id="q4-year-output" for="q4-year">2021</output></label>
+        <input id="q4-year" type="range" min="2011" max="2021" step="1" value="2021">
+      </div>
+      <div class="chart-frame">
+        <div class="chart-container" id="chart-q4" role="img" aria-label="Horizontal bar chart comparing road-crash injury hospitalisations among Australian states and territories"></div>
+      </div>
+      <p class="chart-source">Source: BITRE hospitalised injury data. State and territory counts are not population-adjusted.</p>
+    </section>
+
+    <section class="story-card" id="q5" aria-labelledby="q5-title">
+      <div class="card-heading">
+        <div class="card-number">05</div>
+        <div>
+          <p class="section-kicker">First Nations data</p>
+          <h2 id="q5-title">First Nations Peoples Road Crash Injuries</h2>
+        </div>
+      </div>
+      <div class="question-block">
+        <h3>Research question</h3>
+        <p>How did recorded hospitalised road crash injuries among First Nations Peoples change between 2011 and 2021, and how did the patterns differ among car occupants, motorcyclists, pedal cyclists and pedestrians?</p>
+      </div>
+      <div class="finding-box">
+        <span class="finding-label">Key findings</span>
+        <p>Counts increased in all four groups from 2011 to 2021: the combined car driver/passenger/unknown-position category rose from 617 to 1,158 (+87.7%), motorcyclists from 187 to 520 (+178.1%), pedal cyclists from 121 to 207 (+71.1%), and pedestrians from 180 to 235 (+30.6%). Motorcyclists had the largest percentage rise, while the combined car category had the largest increase in count (+541); these are counts, not population-adjusted rates.</p>
+      </div>
+      <div class="chart-heading">
+        <div><p class="chart-overline">First Nations road users | 2011–2021</p><h3>Hospitalisations by road-user group</h3></div>
+        <span class="chart-unit">People</span>
+      </div>
+      <div class="chart-frame">
+        <div class="chart-container" id="chart-q5" role="img" aria-label="Multi-series line chart of hospitalisations among First Nations road users by road-user group from 2011 to 2021"></div>
+      </div>
+      <p class="chart-source">Source: BITRE First Nations hospitalised injury data. Counts are not population-adjusted and should be interpreted in the context of the source data’s coverage and definitions.</p>
+    </section>
+
+    <aside class="method-note">
+      <span class="method-icon" aria-hidden="true">i</span>
+      <div><h2>About the data</h2><p>This story uses prepared extracts from BITRE’s Australian road-crash hospitalisation data, covering 2011–2021. Hospitalisations are not equivalent to crashes or people injured, and counts alone do not account for population size, exposure, or changes in reporting.</p></div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <span>COS30045 | Data Visualisation — Group 18</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+  <div id="tooltip" class="tooltip" role="status" aria-live="polite" aria-hidden="true"></div>
+</body>
+</html>
